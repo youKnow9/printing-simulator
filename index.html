@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="main.css">
+      <style>
+      @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+      </style>
+</head>
+<body>
+      
+      <div class="buttonStart-wrapper">
+            <div class="buttonStart-wrapper__button">
+                <button id="buttonStart">START GAME</button>
+            </div>
+            <div class="buttonStart-wrapper__discrip">
+                <p>The rules of the game are simple: you need to type certain combinations of letters in the shortest possible time. Keep in mind that in one attempt you can make no more than 1 mistake.</p> 
+                <br><p> Check if you have the English layout enabled and press the START GAME button. Good luck!</p>
+            </div>
+      </div>
+      <div class="progress-bar-wrapper hidden-element">
+            <p>mistake</p>
+            <progress id="progressBar" max="10" value="0"></progress>
+      </div>
+      <div id="lettersWrapper">
+      </div>
+      <div class="lose-window__wrapper">
+            <div class="lose-window">
+                  <p>Oops! You lost. Try Again?</p>
+                  <p id="time">Your time: 00:00:00</p>
+                  <button id="lose-window__button-restert">Restart</button>
+            </div>
+      </div>
+      <div class="win-window__wrapper">
+            <div class="win-window">
+                  <p>You win! Next lvl?</p>
+                  <button id="win-window__button-start">Finish!</button>
+            </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
